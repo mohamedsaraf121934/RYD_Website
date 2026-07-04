@@ -1,0 +1,8 @@
+# robots.txt for RYD Travels & Tours
+# https://www.rydtravels.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location for search engines
+Sitemap: https://www.rydtravels.com/sitemap.xml

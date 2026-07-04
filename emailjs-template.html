@@ -1,0 +1,109 @@
+<!--
+  ===============================================================
+  RYD Travels & Tours — EmailJS "Contact Us" template
+  ===============================================================
+  HOW TO USE:
+  1. EmailJS dashboard → Email Templates → open your template
+     (template_8grvpvm) → click "Edit Content".
+  2. Switch the editor to CODE / HTML view and paste EVERYTHING
+     between <!-- TEMPLATE START --> and <!-- TEMPLATE END -->.
+  3. Set the template fields (right-hand panel) exactly as:
+        To Email   : hello@rydtravels.com
+        From Name  : {{from_name}}
+        From Email : noreplay@rydtravels.com   (your connected no-reply)
+        Reply To   : {{from_email}}
+        Subject    : New enquiry — {{from_name}} ({{service}})
+        Bcc / Cc   : (leave empty)
+  4. Save.  Send a test from the website.
+
+  Variables the website sends (all optional ones render blank if unused):
+    {{from_name}} {{from_email}} {{phone}} {{service}} {{time}} {{message}}
+    Tour form : {{tour_plan}} {{tour_date}} {{adults}} {{children}} {{child_ages}}
+    Vehicle   : {{vehicle_type}} {{seats}} {{rental_days}} {{rental_date}}
+  The {{message}} field already contains a full summary of everything,
+  so this template stays clean and works for every form on the site.
+  ===============================================================
+-->
+
+<!-- TEMPLATE START -->
+<div style="margin:0;padding:0;background:#f4f5fa;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f5fa;padding:24px 0;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(16,20,45,0.08);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(90deg,#d81f26 0%,#0e1020 38%,#2f6bff 66%,#8a1fb0 100%);padding:26px 30px;">
+              <div style="color:#ffffff;font-size:20px;font-weight:700;">RYD Travels &amp; Tours</div>
+              <div style="color:#e7e9f5;font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-top:2px;">Ride your Destination</div>
+            </td>
+          </tr>
+
+          <!-- Title -->
+          <tr>
+            <td style="padding:28px 30px 6px;">
+              <div style="font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#8a1fb0;">New customer enquiry</div>
+              <h1 style="margin:8px 0 0;font-size:22px;color:#1a1c2e;">{{service}}</h1>
+            </td>
+          </tr>
+
+          <!-- Details table -->
+          <tr>
+            <td style="padding:18px 30px 4px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;color:#1a1c2e;">
+                <tr>
+                  <td style="padding:10px 0;border-bottom:1px solid #edeef4;width:38%;color:#5b6072;font-weight:600;">Name</td>
+                  <td style="padding:10px 0;border-bottom:1px solid #edeef4;">{{from_name}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0;border-bottom:1px solid #edeef4;color:#5b6072;font-weight:600;">Email</td>
+                  <td style="padding:10px 0;border-bottom:1px solid #edeef4;"><a href="mailto:{{from_email}}" style="color:#2f6bff;text-decoration:none;">{{from_email}}</a></td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0;border-bottom:1px solid #edeef4;color:#5b6072;font-weight:600;">Phone</td>
+                  <td style="padding:10px 0;border-bottom:1px solid #edeef4;">{{phone}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0;border-bottom:1px solid #edeef4;color:#5b6072;font-weight:600;">Interested in</td>
+                  <td style="padding:10px 0;border-bottom:1px solid #edeef4;">{{service}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0;color:#5b6072;font-weight:600;">Received</td>
+                  <td style="padding:10px 0;">{{time}}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Message -->
+          <tr>
+            <td style="padding:16px 30px 8px;">
+              <div style="font-size:13px;font-weight:600;color:#5b6072;margin-bottom:8px;">Message &amp; details</div>
+              <div style="background:#f6f7fb;border:1px solid #edeef4;border-radius:10px;padding:16px 18px;font-size:14px;line-height:1.7;color:#1a1c2e;white-space:pre-line;">{{message}}</div>
+            </td>
+          </tr>
+
+          <!-- CTA -->
+          <tr>
+            <td style="padding:14px 30px 28px;">
+              <a href="mailto:{{from_email}}" style="display:inline-block;background:linear-gradient(90deg,#d81f26,#8a1fb0);color:#ffffff;text-decoration:none;font-weight:600;font-size:14px;padding:12px 26px;border-radius:50px;">Reply to {{from_name}}</a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background:#0e1020;padding:20px 30px;color:#b6bad3;font-size:12px;line-height:1.7;">
+              <strong style="color:#ffffff;">RYD Travels &amp; Tours</strong><br />
+              66/ Central Road, Akkaraipattu 06, Sri Lanka<br />
+              +94 71 172 1193 &nbsp;·&nbsp; hello@rydtravels.com &nbsp;·&nbsp; www.rydtravels.com
+            </td>
+          </tr>
+
+        </table>
+        <div style="color:#9599b6;font-size:11px;margin-top:14px;">This enquiry was submitted through www.rydtravels.com</div>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- TEMPLATE END -->
